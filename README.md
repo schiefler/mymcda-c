@@ -67,6 +67,11 @@ Comece fazendo a instação com o seguinte comando:
 $ sudo apt install mysql-server
 ```
 
-
+Antes de fazer a configuração do mysql_secure_installation, executar os comandos abaixo:
+```
+$ sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'insert_password';
+exit;
+```
 
 ## 3. Configurações iniciais Laravel
